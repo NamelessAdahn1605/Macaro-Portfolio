@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/desctabs.css">
+    <script type="text/javascript" src="jvs/lightmode.js" defer></script>
+    <script type="text/javascript" src="jvs/aboutme.js" defer></script>
+
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="imgs/torch_icon.png">
+
+</head>
+
+<body style="background-image: url(imgs/port_bg.png);">
+
+    <div class="char-and-desc">
+
+        <div class="char-portrait" id="left">
+
+            <div class="char-img-div">
+                <img src="imgs/pixelpfp.jpg" class="char-img" id="char-select">
+            </div>
+
+            <div class="char-select-div">
+                <p class="char-select-p">Art Dominic Macaro</p>
+            </div>
+
+        </div>
+
+        <div class="char-desc">
+
+            <div class="desctabs-and-exit">
+
+                <div class="desctabs-div">
+
+                    <button id="stats-bt" class="tab-bt" onclick="tabswitch('stats');">Stats</button>
+
+                    <button id="story-bt" class="tab-bt" onclick="tabswitch('story');">Story</button>
+
+                    <button id="skills-bt" class="tab-bt" onclick="tabswitch('skills')">Skills</button>
+
+                </div>
+
+                <div class="exit-and-mode">
+
+                    <button id="mode-bt" class="about-mode">
+                        <span class="lightmode-span">Dark / Light</span>
+                    </button>
+
+                    <a href="home.html">
+                        <button class="exit">x</button>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="desc-content-div">
+
+                <div id="stats">
+
+                    <div class="stat-name-div">
+                        <p class="stat-name">ART DOMINIC MACARO</p>
+
+                        <hr>
+                    </div>
+
+                    <div class="mini-mode">
+
+                        <div class="mini-portrait">
+                            <img src="imgs/pixelpfp-sqr.jpg" class="smol-pfp">
+                        </div>
+
+                        <div class="race-class-equip">
+
+                            <div style="width: 50%; margin-right: 10px;">
+
+                                <div class="race-div">
+                                    <p class="stat-desc">Level: 20</p>
+                                    <p class="stat-abbr">Lvl: 20</p>
+                                </div>
+
+                                <div class="equip-div">
+                                    <p class="stat-desc">Equipment:</p>
+                                    <p class="stat-abbr">Equip:</p>
+                                </div>
+                            </div>
+
+                            <div style="width: 50%; margin-right: 5px;">
+                                <div class="class-div">
+                                    <p class="stat-desc">Class: Grand Wizard</p>
+                                    <p class="stat-abbr">G. Wzrd</p>
+                                </div>
+
+                                <div class="equip-list-div">
+                                    <p class="equip-list">- Tee Shirt</p>
+                                    <p class="equip-list">- Cotton Pants</p>
+                                    <p class="equip-list">- Wooden Sword</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="stat-points">
+
+                        <div class="stat-desc-div">
+
+                            <button class="stat-desc" id="desc-stat">Health:</button>
+                            <button class="stat-abbr" id="desc-stat">HP:</button>
+                            <button class="stat-desc" id="desc-stat">Attack:</button>
+                            <button class="stat-abbr" id="desc-stat">ATK:</button>
+                            <button class="stat-desc" id="desc-stat">Magic:</button>
+                            <button class="stat-abbr" id="desc-stat">MGC:</button>
+                            <button class="stat-desc" id="desc-stat">Defense:</button>
+                            <button class="stat-abbr" id="desc-stat">DEF:</button>
+                            <button class="stat-desc" id="desc-stat">Speed:</button>
+                            <button class="stat-abbr" id="desc-stat">SPD:</button>
+                            <button class="stat-desc" id="desc-stat">Magic. Def.:</button>
+                            <button class="stat-abbr" id="desc-stat">Mg.Def.:</button>
+
+                        </div>
+
+                        <div class="stat-bars">
+
+                            <div class="hp-div">
+                                <button class="hp-bar"> 70 / 100</button>
+                            </div>
+
+                            <div class="atk-div">
+                                <button class="atk-bar"></button>
+                                <button class="atk-bar"></button>
+                                <button class="atk-bar"></button>
+                                <button class="atk-bar"></button>
+                                <button class="atk-bar"></button>
+                                <button class="atk-bar"></button>
+                            </div>
+
+                            <div class="mgc-div">
+                                <button class="mgc-bar"></button>
+                                <button class="mgc-bar"></button>
+                                <button class="mgc-bar"></button>
+                                <button class="mgc-bar"></button>
+                                <button class="mgc-bar"></button>
+                                <button class="mgc-bar"></button>
+                                <button class="mgc-bar"></button>
+                            </div>
+
+                            <div class="def-div">
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                            </div>
+
+                            <div class="spd-div">
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                            </div>
+
+                            <div class="mgc-def-div">
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                                <button class="reg-bar"></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="story">
+
+                    <p class="intro">
+                        Some say creativity is born in chaos. Driven by the brink of deadlines, fueled by
+                        caffeine, and illuminated
+                        under the blue light glow of the monitor at the dawn of 2 a.m.
+
+                        <br> <br>
+
+                        For him, that&#39s not chaos. That&#39s just how he rolls.
+
+                        <br> <br>
+
+                        No one really knows when he started. Only that he&#39d been around long enough for his code hum
+                        and
+                        to whisper things in his mind.
+
+                        <br> <br>
+
+                        He&#39s the kind of creator who doesn&#39t chase the spotlight. He builds it, pixel by pixel,
+                        frame by frame.
+
+                        <br> <br>
+
+                        A web designer by instinct, a programmer by logic, and a video editor by sheer obsession. He
+                        moves fluidly between the search engines and online tutorials like it&#39s second nature.
+
+                        <br> <br>
+
+                        To him, a line of code is no different from a camera cut. Both are tools to sculpt emotion,
+                        flow,
+                        and meaning. He sees beauty in syntax, rhythm in transitions, and narrative in every interface.
+
+                        <br> <br>
+
+                        When he designs, it&#39s not just to make something look good, it&#39s to make it feel
+                        inevitable.
+
+                        <br> <br>
+
+                        He doesn&#39t talk much about his process. Maybe because he doesn&#39t fully understand it
+                        himself. Well, not maybe, but, probably most definitely.
+
+                        <br> <br>
+
+                        Inspiration hits like static. An idea, a shape, a blur, or a flicker. And suddenly he&#39s lost
+                        in it, vanishing into his mind palace until the outside world becomes pure noise. Hours pass.
+                        Maybe days. But when he resurfaces, he gains epiphany and he becomes epiphany itself.
+
+                        <br> <br>
+
+                        Some people build websites. Some people edit videos. He does both, and more.
+
+                        <br> <br>
+
+                        He doesn&#39t claim to be the best, just the one who cares enough to make it perfect. The one
+                        who notices the misaligned div no one else sees. The one who spends an extra hour fixing
+                        something most people would never notice. Not for praise, but for peace of mind.
+
+                        <br> <br>
+
+                        He&#39s not here to follow trends. He&#39s here to craft experiences that outlive them.
+                        He&#39s not chasing perfection, he&#39s quietly building it.
+
+                        <br> <br>
+
+                        His name is literally Art.
+
+                        <br> <br>
+
+                        The architect of motion, logic, and light. And for every frame, every function, and every
+                        flawless fade, he&#39s behind it. In front of it. And right next to it, still making sure
+                        that it&#39s properly aligned.
+                    </p>
+
+                </div>
+
+                <div id="skills">
+
+                    <ul>
+                        <li>&#x2A;Click&#x2A; &#x2A;Click&#x2A; I'm in...</li>
+                        <dd>-Given enough time, he can program in both but not simultaneously in
+                            <span class="highlight">Python</span> and <span class="highlight">Java</span>
+                            languages. Whether it&#39s developing Android apps through <span class="highlight">Android
+                                Studio</span> or sculpting
+                            something simple with <span class="highlight">HTML</span>, he knows his way around the code.
+                        </dd>
+                    </ul>
+
+                    <div class="state-power-cost">
+                        <p class="state">&#60; Active &#62;</p>
+                        <p class="pwr">Power: 20 Magic</p>
+                        <p class="cost">Cost: 10 Energy</p>
+                    </div>
+
+                    <hr>
+
+                    <ul>
+                        <li>Say Cheese~!</li>
+                        <dd>-Editing is his playground and no timeline is safe. He can adapt to any video editing
+                            software such as <span class="highlight">Clipchamp</span>
+                            and <span class="highlight">Capcut</span>. Splices footage
+                            seamlessly and deletes all awkward pauses.</dd>
+                    </ul>
+
+                    <div class="state-power-cost">
+                        <p class="state">&#60; Active &#62;</p>
+                        <p class="pwr">Power: 10 Attack</p>
+                        <p class="cost">Cost: 8 Energy</p>
+                    </div>
+
+                    <hr>
+
+                    <ul>
+                        <li>I can handle it</li>
+                        <dd>-Years of experience has turned him proficient in all of the Microsoft suites such as <span
+                                class="highlight">Word</span>,
+                            <span class="highlight">Excel</span>, and
+                            <span class="highlight">Powerpoint</span>. From sleek reports and presentations to building
+                            organized spreadsheets, he turns everyday tools into creative weapons.
+                        </dd>
+                    </ul>
+
+                    <div class="state-power-cost">
+                        <p class="state">&#60; Passive &#62;</p>
+                        <p class="pwr">Power: None</p>
+                        <p class="cost">Cost: 5 Energy</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

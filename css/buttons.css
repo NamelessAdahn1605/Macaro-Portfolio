@@ -1,0 +1,87 @@
+.select-div {
+    display: grid;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.about-bt,
+.about-span,
+.journey-bt,
+.journey-span,
+.projects-bt,
+.projects-span,
+#mode-bt,
+.lightmode-span,
+.quit-bt,
+.quit-span {
+    color: var(--text-color);
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.about-bt:hover .about-span,
+.journey-bt:hover .journey-span,
+.projects-bt:hover .projects-span,
+#mode-bt:hover .lightmode-span,
+.quit-bt:hover .quit-span {
+    display: none;
+}
+
+.about-bt:active,
+.journey-bt:active,
+.projects-bt:active,
+#mode-bt:active,
+.quit-bt:active {
+    color: var(--text-color-hover);
+}
+
+.about-bt:hover::after {
+    content: "> About Me <";
+}
+
+.journey-bt:hover::after {
+    content: "> My Journey <";
+}
+
+.projects-bt:hover::after {
+    content: "> Projects <";
+}
+
+#mode-bt:hover::after {
+    content: "> Light / Dark <";
+}
+
+.quit-bt:hover::after {
+    content: "> Quit <";
+}
+
+@media (max-width: 1000px) {
+
+    .about-bt,
+    .about-span,
+    .journey-bt,
+    .journey-span,
+    .projects-bt,
+    .projects-span,
+    #mode-bt,
+    .lightmode-span,
+    .quit-bt,
+    .quit-span {
+        font-size: 30px;
+    }
+
+}

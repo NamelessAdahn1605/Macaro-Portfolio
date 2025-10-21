@@ -1,0 +1,146 @@
+.desc-content-div {
+    height: 100%;
+    padding: 5px;
+
+    border: 2px solid var(--text-color);
+    margin-top: 5px;
+
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: grab;
+    border-width: 2px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+
+.desctabs-and-exit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2px;
+    height: fit-content;
+}
+
+.desctabs-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: fit-content;
+}
+
+#stats-bt {
+    border: 5px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.tab-bt,
+.exit,
+.about-mode {
+    border: 5px double var(--text-color);
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.exit-and-mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-mode {
+    padding: 0px 6px 3px 6px;
+    text-align: center;
+}
+
+.exit {
+    padding: 0px 6px 3px 6px;
+    height: fit-content;
+    font-size: 15px;
+}
+
+.exit:active,
+.about-mode:active {
+    color: var(--text-color-hover);
+}
+
+hr {
+    border: 1px solid var(--text-color);
+}
+
+.hp-div,
+.atk-div,
+.def-div,
+.spd-div,
+.mgc-div,
+.mgc-def-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 5px;
+}
+
+.stat-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.stat-desc-div,
+.stat-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 43%;
+}
+
+.hp-bar,
+.atk-bar,
+.mgc-bar,
+.reg-bar {
+    border-style: none;
+    height: 35px;
+    width: 15px;
+    margin-left: 10px;
+}
+
+.hp-bar {
+    background-color: green;
+    color: white;
+    width: 60%;
+    text-align: start;
+}
+
+.atk-bar {
+    background-color: red;
+}
+
+.mgc-bar {
+    background-color: blue;
+}
+
+.reg-bar {
+    background-color: var(--text-color);
+}
